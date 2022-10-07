@@ -15,6 +15,10 @@ using namespace std;
 //----------
 // Make a line for Function Prototype for getListprime Here
 //----------
+void getListprime(int begin,int end);
+int getListprime();
+void getListprime(int begin);
+int cnt;
 
 int main()
 {
@@ -30,6 +34,55 @@ int main()
 }
 void getListprime(int begin, int end)
 {
-
-	// Complete this function
+	int i,p;
+  	for (p=begin;p<=end; p++) 
+	{
+    	if(p == 0 || p == 1)
+      		continue;
+		cnt=1;
+    	for(int i = 2; i <= (p / 2); i++)
+      		if (p % i == 0)
+			{
+				cnt=0;
+        		break;
+			}
+    	if(cnt==1)
+      		cout << " Prime number : " << p <<endl;
+	}
+}
+int getListprime()
+{
+	int i,p;
+	for (p = 0; p<=100;p++)
+	{
+		if(p == 0 || p == 1)
+      		continue;
+		cnt=1;
+    	for(int i = 2; i <= (p / 2); i++)
+      		if (p % i == 0)
+			{
+				cnt=0;
+        		break;
+			}
+    	if(cnt==0)
+      		cout << " Prime number : " << p <<endl;
+	}		
+}
+void getListprime(int begin)
+{
+	int i,p;
+	for (p = begin; p<=100;p++)
+	{
+		if(p == 0 || p == 1)
+      		continue;
+		cnt=1;
+    	for(int i = 2; i <= (p / 2); i++)
+      		if (p % i == 0)
+			{
+				cnt=0;
+        		break;
+			}
+    	if(cnt==0)
+      		cout << " Prime number : " << p <<endl;
+	}
 }
