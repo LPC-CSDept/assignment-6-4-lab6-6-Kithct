@@ -64,7 +64,7 @@ int getListprime()
 				cnt=0;
         		break;
 			}
-    	if(cnt==0)
+    	if(cnt==1)
       		cout << " Prime number : " << p <<endl;
 	}		
 }
@@ -82,7 +82,7 @@ void getListprime(int begin)
 				cnt=0;
         		break;
 			}
-    	if(cnt==0)
+    	if(cnt==1)
       		cout << " Prime number : " << p <<endl;
 	}
 }
